@@ -1,8 +1,8 @@
-name: sd/noop
+name: sd/sample2
 version: '1.0.0'
-description: SDv4 template that does nothing
-maintainer: jithin1987@gmail.com
+description: SD that prints a line
+maintainer: aishwaryanair.mec@gmail.com
 config:
   image: docker.ouroath.com:4443/docker.io/node:18
   steps:
-    - noop: echo "Testing template creation"
+    - printLine: echo "Testing template creation V2"
