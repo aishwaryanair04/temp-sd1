@@ -1,6 +1,6 @@
 ---
 shared:
-  image: node:8
+  image: docker.ouroath.com:4443/docker.io/node:18
   environment:
     SD_TEMPLATE_PATH: ./template.yaml
 jobs:
