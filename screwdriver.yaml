@@ -2,7 +2,7 @@
 shared:
   image: docker.ouroath.com:4443/docker.io/node:18
   environment:
-    SD_TEMPLATE_PATH: ./template.yaml
+    SD_TEMPLATE_PATH: ./ash_template.yaml
 jobs:
   validate_template:
     requires: [~pr, ~commit]
@@ -15,4 +15,4 @@ jobs:
     steps:
       - install_prerequisites: npm install -g screwdriver-template-main
       - publish: template-publish
-      - autotag: template-tag --name sd/noop --tag latest
+      - autotag: template-tag --name sd/sample2 --tag latest
