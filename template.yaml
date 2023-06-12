@@ -3,6 +3,6 @@ version: '1.0.0'
 description: SDv4 template that does nothing
 maintainer: jithin1987@gmail.com
 config:
-  image: screwdrivercd/noop-container
+  image: docker.ouroath.com:4443/docker.io/node:18
   steps:
     - noop: echo "Testing template creation"
